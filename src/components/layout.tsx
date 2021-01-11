@@ -4,7 +4,6 @@ import styles from './layout.module.scss';
 import utilStyles from '../styles/utils.module.scss';
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image'
 
 const name = 'Nozomuのブログ';
 export const siteTitle = 'Nozomuのブログ';
@@ -20,7 +19,7 @@ const Layout = ({ children, home }: { children: ReactNode; home?: boolean }) => 
         {home ? (
           <>
             <img
-              src='/Users/nozomu/my-blog/public/images/profile.jpg'
+              src='/images/profile.jpg'
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -31,7 +30,7 @@ const Layout = ({ children, home }: { children: ReactNode; home?: boolean }) => 
             <Link href='/'>
               <a>
                 <img
-                  src='/Users/nozomu/my-blog/public/images/profile.jpg'
+                  src='/images/profile.jpg'
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
